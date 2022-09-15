@@ -59,6 +59,7 @@ body {
 
 .name{
     padding: 20px;
+    margin-left: 40px;
 }
 
 /* Acerca de mi */
@@ -84,6 +85,7 @@ body {
     background-color: #1D4ED8;
     font-size: 16px;
     border-radius: 30px;
+    box-shadow: 5px 5px 20px gray;
     transition: all 2s;
 }
 
@@ -116,7 +118,7 @@ body {
 #skills {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 50px;
     margin: 20px;
     border-bottom: 1px solid rgb(215, 215, 215);
 } 
@@ -136,6 +138,15 @@ body {
     border: 1px solid rgb(215, 215, 215);
     border-radius: 30px;
 } 
+
+.html, .css, .javascript, .json {
+    transition: all 2s;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.html:hover, .css:hover, .javascript:hover, .json:hover {
+    transform: scale(1.2);
+}
 
 #skills figure figcaption { 
     padding: 10px;
@@ -172,7 +183,7 @@ body {
     transform: scale(1.2);
 }
 
-#contact .networks a {
+#contact .networks a{
     padding: 20px;
     margin: 20px;
 }
@@ -349,7 +360,7 @@ header {
 
 /*-----------------------------------------------------------------------------*/
 
-/* Mobile */
+/* Mobile grande*/
 @media only screen and (max-width: 576px) {
 
 /* Menu de navegacion */
@@ -410,4 +421,65 @@ header a {
     justify-content: center;
     align-items: center;
 }
+}
+
+@media only screen and (max-width: 480px) {
+   /* Menu de navegacion */
+header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    flex-direction: column;
+}
+
+header a {
+    font-size: 14px;
+}
+
+/* Acerca de mi */
+#aboutMe img {
+    width: 0;
+}
+#aboutMecontainer button {
+    margin: 20px;
+}
+
+/* Mis habilidades */
+#skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Informacion de contacto */
+#contact .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Certificaciones */
+.certifications {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+#certifications img {
+    width: 500px;
+    height: 300px;
+}
+
+#certifications figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 }
