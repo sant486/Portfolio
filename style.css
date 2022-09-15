@@ -372,6 +372,7 @@ header {
 
 .name {
     flex-direction: column;
+    margin-left: 5px;
 }
 
 header a {
@@ -410,9 +411,9 @@ header a {
     gap: 5px;
     padding: 20px;
 }
-#certifications img {
-    width: 500px;
-    height: 300px;
+.certifications img {
+    width: 400px;
+    height: 200px;
 }
 
 #certifications figure {
@@ -472,8 +473,8 @@ header a {
     padding: 20px;
 }
 #certifications img {
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
 }
 
 #certifications figure {
