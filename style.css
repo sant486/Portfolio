@@ -60,11 +60,13 @@ body {
     text-decoration: none;
     padding: 20px;
     align-items: center;
-    color: rgba(0, 0, 0, 0.723)
+    color: rgba(0, 0, 0, 0.723);
+    transition: all 1s;
 } 
 
 .options div a:hover {
-    color: rgba(0, 0, 255, 0.586)
+    color: rgba(0, 0, 255, 0.586);
+    transform: scale(1.1);
 }
 
 .name{
@@ -289,6 +291,13 @@ body {
     justify-content: center;
 }
 
+.certifications figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .certifications img {
     border-radius: 50px;
 }
@@ -301,6 +310,26 @@ body {
     padding: 20px;
     margin: 20px;
 }
+
+.certification__button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    background-color: #1D4ED8;
+    font-size: 16px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px gray;
+    transition: all 2s;
+}
+
+.certification__button a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .card__container {
     display: flex;
@@ -444,7 +473,7 @@ header a {
 }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
    /* Menu de navegacion */
 header {
     flex-direction: column;
@@ -494,8 +523,8 @@ header a {
     padding: 20px;
 }
 #certifications img {
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 150px;
 }
 
 #certifications figure {
