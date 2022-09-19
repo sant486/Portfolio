@@ -325,11 +325,18 @@ body {
     transition: all 2s;
 }
 
+.certification__button:hover{
+    transform: scale(1.1);
+}
+
 .certification__button a {
     text-decoration: none;
     color: white;
 }
 
+.certification__button a:hover{
+    color: white;
+}
 
 .card__container {
     display: flex;
