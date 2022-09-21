@@ -9,22 +9,22 @@
     width: 120px;
     height: 80px;
 }
-#aboutMe img {
+.aboutMe img {
     display: flex;
     width: 50%;
 }
 
-#skills img { 
+.skills img { 
     width: 100px;
     height: 100px;
 }
 
-#contact img {
+.contact img {
     width: 70px;
     height: 70px;
 }
 
-#projects img {
+.projects img {
     width: 500px;
     height: 300px;
 }
@@ -75,20 +75,20 @@ body {
 }
 
 /* Acerca de mi */
-#aboutMe{
+.aboutMe{
     display: flex;
     padding: 20px;
     margin: 20px;
 }
 
-#aboutMecontainer{
+.aboutMecontainer{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
 }
 
-#aboutMecontainer button{ 
+.aboutMecontainer button{ 
     width: 200px;
     padding: 10px;
     border: none;
@@ -101,11 +101,11 @@ body {
     transition: all 2s;
 }
 
-#aboutMecontainer button:hover {
+.aboutMecontainer button:hover {
     transform: scale(1.2);
 }
 
-#aboutMe div p {
+.aboutMe div p {
     display: flex;
     width: 80%;
 } 
@@ -127,7 +127,7 @@ body {
 }
 
 /* Mis habilidades */
-#skills {
+.skills {
     display: flex;
     justify-content: space-around;
     padding: 50px;
@@ -135,7 +135,7 @@ body {
     border-bottom: 1px solid rgb(215, 215, 215);
 } 
 
-#skills__tittle{
+.skills__tittle{
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -143,7 +143,7 @@ body {
     font-size: 30px;
 } 
 
-#skills figure {
+.skills figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,19 +160,19 @@ body {
     transform: scale(1.2);
 }
 
-#skills figure figcaption { 
+.skills figure figcaption { 
     padding: 10px;
     margin: 10px;
 }
 
-#skills figure img {
+.skills figure img {
     padding: 10px;
     margin: 20px;
 }
 
 
 /* Informacion de contacto */
-#contact .networks {
+.contact .networks {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -195,12 +195,12 @@ body {
     transform: scale(1.2);
 }
 
-#contact .networks a{
+.contact .networks a{
     padding: 20px;
     margin: 20px;
 }
 
-#contact__tittle {
+.contact__tittle {
     color: rgba(0, 0, 0, 0.723);
     padding: 20px;
     margin: 20px;
@@ -209,12 +209,12 @@ body {
     font-size: 30px;
 } 
 
-#contact .info {
+.contact .info {
     display: flex;
     justify-content: center;
 }
 
-#contact .info figure {
+.contact .info figure {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -237,33 +237,7 @@ body {
     align-items: center;
 }
 
-#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-}
-
-#projects figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-}
-
-#projects img {
-    border-radius: 50px;
-}
-
-#projects figure figcaption {
-    margin: 20px;
-    padding: 20px;
-}
-
-#projects__tittle {
+.projects__tittle {
     color: rgba(0, 0, 0, 0.723);
     display: flex;
     justify-content: center;
@@ -271,8 +245,6 @@ body {
     padding: 20px;
     margin: 20px;
 }
-
-
 
 /* Certificaciones */
 .certifications {
@@ -334,15 +306,6 @@ body {
     color: white;
 }
 
-.certification__button a:hover{
-    color: white;
-}
-
-.card__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Footers */
 footer {
@@ -353,32 +316,21 @@ footer {
     border-top: 1px solid rgb(215, 215, 215);
 }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------RESPONSIVE-------------------------------------------------*/
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
-/* Menu de navegacion */
-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.name {
-    flex-direction: column;
-    margin-left: 0px;
-}
 
 /* Acerca de mi */
-#aboutMe img {
+.aboutMe img {
     width: 0;
 }
-#aboutMecontainer button {
+.aboutMecontainer button {
     margin: 20px;
 }
 
 /* Mis habilidades */
-#skills {
+.skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -406,7 +358,7 @@ header {
     height: 300px;
 }
 
-#certifications figure {
+.certifications figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -416,25 +368,9 @@ header {
 
 /*-----------------------------------------------------------------------------*/
 
+
 /* Mobile grande*/
 @media only screen and (max-width: 576px) {
-
-/* Menu de navegacion */
-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.name {
-    flex-direction: column;
-    margin-left: 0px;
-}
-
-header a {
-    font-size: 14px;
-}
-
 /* Acerca de mi */
 #aboutMe img {
     width: 0;
@@ -481,21 +417,6 @@ header a {
 }
 
 @media only screen and (max-width: 420px) {
-   /* Menu de navegacion */
-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.name {
-    flex-direction: column;
-    margin-left: 0px;
-}
-
-header a {
-    font-size: 14px;
-}
 
 /* Acerca de mi */
 #aboutMe img {
@@ -531,7 +452,7 @@ header a {
 }
 #certifications figure a img {
     width: 300px;
-    height: 150px;
+    height: 200px;
 }
 
 #certifications figure {

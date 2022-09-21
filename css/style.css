@@ -1,0 +1,396 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Menu de navegacion */
+.nav__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  position: sticky;
+  top: 0;
+}
+.nav__container .options {
+  display: flex;
+  justify-content: end;
+}
+.nav__container .options div a {
+  text-decoration: none;
+  padding: 20px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.723);
+  transition: all 1s;
+}
+.nav__container .options div a:hover {
+  color: rgba(0, 0, 255, 0.586);
+  transform: scale(1.1);
+}
+.nav__container .name {
+  padding: 20px;
+  margin-left: 40px;
+}
+.nav__container .name .logo {
+  width: 120px;
+  height: 80px;
+}
+
+/* Acerca de mi */
+.aboutMe {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+}
+.aboutMe img {
+  display: flex;
+  width: 50%;
+}
+.aboutMe .aboutMecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutMe .aboutMecontainer button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #1D4ED8;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px gray;
+  transition: all 2s;
+}
+.aboutMe .aboutMecontainer button:hover {
+  transform: scale(1.2);
+}
+.aboutMe .aboutMecontainer p {
+  display: flex;
+  width: 80%;
+}
+
+.animacion__bajar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* Mis habilidades */
+.skills__tittle {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin: 20px;
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+.skills figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 30px;
+}
+.skills figure img {
+  width: 100px;
+  height: 100px;
+}
+.skills figure figcaption {
+  padding: 10px;
+  margin: 10px;
+}
+.skills figure img {
+  padding: 10px;
+  margin: 20px;
+}
+.skills .html, .skills .css, .skills .javascript, .skills .json {
+  transition: all 2s;
+  box-shadow: 5px 5px 20px gray;
+}
+.skills .html:hover, .skills .css:hover, .skills .javascript:hover, .skills .json:hover {
+  transform: scale(1.2);
+}
+
+/* Informacion de contacto */
+.contact__tittle {
+  color: rgba(0, 0, 0, 0.723);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.contact .networks {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+.contact .networks .instagram, .contact .networks .linkedin, .contact .networks .github {
+  transition: all 2s;
+  padding: 20px;
+  margin: 20px;
+}
+.contact .networks .instagram img, .contact .networks .linkedin img, .contact .networks .github img {
+  width: 70px;
+  height: 70px;
+}
+.contact .networks .instagram:hover, .contact .networks .linkedin:hover, .contact .networks .github:hover {
+  transform: scale(1.2);
+}
+.contact .info {
+  display: flex;
+  justify-content: center;
+}
+.contact .info figure {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+.contact .info figure img {
+  width: 70px;
+  height: 70px;
+  padding-right: 10px;
+}
+
+/*Mis proyectos*/
+.projects__tittle {
+  color: rgba(0, 0, 0, 0.723);
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.carrusel__container {
+  display: flex;
+  justify-content: center;
+}
+.carrusel__container .carrusel {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Certificaciones */
+.certifications__tittle {
+  color: rgba(0, 0, 0, 0.723);
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.certifications {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+.certifications figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.certifications figure img {
+  border-radius: 50px;
+  width: 500px;
+  height: 300px;
+}
+.certifications figure figcaption {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.certifications figure .certification__button {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  background-color: #1D4ED8;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px gray;
+  transition: all 2s;
+}
+.certifications figure .certification__button a {
+  text-decoration: none;
+  color: white;
+}
+.certifications figure .certification__button:hover {
+  transform: scale(1.1);
+}
+
+/* Footers */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border-top: 1px solid rgb(215, 215, 215);
+}
+
+/*----------------------------RESPONSIVE-------------------------------------------------*/
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Acerca de mi */
+  .aboutMe .aboutMecontainer button {
+    margin: 20px;
+  }
+  .aboutMe img {
+    width: 0;
+  }
+  /* Mis habilidades */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* Informacion de contacto */
+  .contact .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Certificaciones */
+  .certification {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .certification figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .certification figure a img {
+    width: 500px;
+    height: 300px;
+  }
+}
+/* Mobile grande*/
+@media only screen and (max-width: 576px) {
+  /* Acerca de mi */
+  .aboutMe .aboutMecontainer button {
+    margin: 20px;
+  }
+  .aboutMe img {
+    width: 0;
+  }
+  /* Mis habilidades */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* Informacion de contacto */
+  .contact .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Certificaciones */
+  .certification {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .certification figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .certification figure a img {
+    width: 400px;
+    height: 250px;
+  }
+}
+/* Mobile pequeño*/
+@media only screen and (max-width: 420px) {
+  /* Acerca de mi */
+  .aboutMe .aboutMecontainer button {
+    margin: 20px;
+  }
+  .aboutMe img {
+    width: 0;
+  }
+  /* Mis habilidades */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* Informacion de contacto */
+  .contact .info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Certificaciones */
+  .certification {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .certification figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .certification figure a img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
