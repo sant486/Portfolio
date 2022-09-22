@@ -1,11 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+@import "./base/variables.scss";
+@import "./componentes/global.scss";
 
-body {
-    font-family: 'Nunito Sans', sans-serif;    
-}
 
 /* Menu de navegacion */
 .nav__container {
@@ -70,7 +65,7 @@ body {
             border: none;
             text-decoration: none;
             color: white;
-            background-color: #1D4ED8;
+            background-color: $color-botones;
             font-size: 16px;
             border-radius: 30px;
             box-shadow: 5px 5px 20px gray;
@@ -111,6 +106,7 @@ body {
     display: flex;
     justify-content: center;
     font-size: 30px;
+    color: $color-titulos ;
 } 
 
 .skills {
@@ -118,13 +114,13 @@ body {
     justify-content: space-around;
     padding: 50px;
     margin: 20px;
-    border-bottom: 1px solid rgb(215, 215, 215);
+    border-bottom: 1px solid $color-separadores;
 
     figure {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid rgb(215, 215, 215);
+        border: 1px solid $color-separadores;
         border-radius: 30px;
 
         img {
@@ -155,7 +151,7 @@ body {
 
 /* Informacion de contacto */
 .contact__tittle {
-    color: rgba(0, 0, 0, 0.723);
+    color: $color-titulos;
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -207,7 +203,7 @@ body {
 
 /*Mis proyectos*/
 .projects__tittle {
-    color: rgba(0, 0, 0, 0.723);
+    color: $color-titulos;
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -227,7 +223,7 @@ body {
 
 /* Certificaciones */
 .certifications__tittle {
-    color: rgba(0, 0, 0, 0.723);
+    color: $color-titulos;
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -269,7 +265,7 @@ body {
             padding: 10px;
             border: none;
             text-decoration: none;
-            background-color: #1D4ED8;
+            background-color: $color-botones;
             font-size: 16px;
             border-radius: 30px;
             box-shadow: 5px 5px 20px gray;
@@ -293,7 +289,7 @@ footer {
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    border-top: 1px solid rgb(215, 215, 215);
+    border-top: 1px solid $color-separadores; 
 }
 
 /*----------------------------RESPONSIVE-------------------------------------------------*/
@@ -313,9 +309,9 @@ footer {
     /* Mis habilidades */
     .skills {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 250px);
+        gap: 20px;
     }
 
     /* Informacion de contacto */
@@ -368,9 +364,9 @@ footer {
     /* Mis habilidades */
     .skills {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 200px);
+        gap: 20px;
     }
 
     /* Informacion de contacto */
@@ -423,9 +419,9 @@ footer {
     /* Mis habilidades */
     .skills {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 20px;
     }
 
     /* Informacion de contacto */
@@ -437,7 +433,7 @@ footer {
         }
     }
 
-    /* Certificaciones */
+    /* Certificaciones */ 
     .certifications {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);

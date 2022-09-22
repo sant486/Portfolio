@@ -6,6 +6,7 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.723);
 }
 
 /* Menu de navegacion */
@@ -101,6 +102,7 @@ body {
   display: flex;
   justify-content: center;
   font-size: 30px;
+  color: rgba(0, 0, 0, 0.723);
 }
 
 .skills {
@@ -278,9 +280,9 @@ footer {
   /* Mis habilidades */
   .skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
   }
   /* Informacion de contacto */
   .contact .info {
@@ -289,7 +291,7 @@ footer {
     align-items: center;
   }
   /* Certificaciones */
-  .certification {
+  .certifications {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
@@ -297,13 +299,13 @@ footer {
     gap: 10px;
     padding: 20px;
   }
-  .certification figure {
+  .certifications figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .certification figure a img {
+  .certifications figure a img {
     width: 500px;
     height: 300px;
   }
@@ -320,9 +322,9 @@ footer {
   /* Mis habilidades */
   .skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
   }
   /* Informacion de contacto */
   .contact .info {
@@ -331,7 +333,7 @@ footer {
     align-items: center;
   }
   /* Certificaciones */
-  .certification {
+  .certifications {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
@@ -339,13 +341,13 @@ footer {
     gap: 10px;
     padding: 20px;
   }
-  .certification figure {
+  .certifications figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .certification figure a img {
+  .certifications figure a img {
     width: 400px;
     height: 250px;
   }
@@ -362,9 +364,9 @@ footer {
   /* Mis habilidades */
   .skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 20px;
   }
   /* Informacion de contacto */
   .contact .info {
@@ -373,7 +375,7 @@ footer {
     align-items: center;
   }
   /* Certificaciones */
-  .certification {
+  .certifications {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
@@ -381,13 +383,13 @@ footer {
     gap: 10px;
     padding: 20px;
   }
-  .certification figure {
+  .certifications figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .certification figure a img {
+  .certifications figure a img {
     width: 300px;
     height: 200px;
   }
