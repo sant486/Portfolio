@@ -1,4 +1,11 @@
 @charset "UTF-8";
+footer, .certifications figure figcaption, .certifications__tittle, .projects__tittle, .contact .info, .contact__tittle, .animacion__bajar, .nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,13 +14,8 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   color: rgba(0, 0, 0, 0.723);
-}
-
-/* Menu de navegacion */
+} /* Menu de navegacion */
 .nav__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: white;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
@@ -60,6 +62,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.aboutMe .aboutMecontainer h1 {
+  font-size: 16px;
+  display: flex;
+  width: 80%;
+  color: rgba(0, 0, 0, 0.723);
+}
 .aboutMe .aboutMecontainer button {
   width: 200px;
   padding: 10px;
@@ -75,15 +83,8 @@ body {
 .aboutMe .aboutMecontainer button:hover {
   transform: scale(1.2);
 }
-.aboutMe .aboutMecontainer p {
-  display: flex;
-  width: 80%;
-}
 
 .animacion__bajar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: bounce 1s infinite;
 }
 
@@ -97,12 +98,12 @@ body {
 }
 /* Mis habilidades */
 .skills__tittle {
+  font-size: 30px;
   padding: 20px;
   margin: 20px;
+  color: rgba(0, 0, 0, 0.723);
   display: flex;
   justify-content: center;
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.723);
 }
 
 .skills {
@@ -144,8 +145,6 @@ body {
   color: rgba(0, 0, 0, 0.723);
   padding: 20px;
   margin: 20px;
-  display: flex;
-  justify-content: center;
   font-size: 30px;
 }
 
@@ -167,10 +166,6 @@ body {
 .contact .networks .instagram:hover, .contact .networks .linkedin:hover, .contact .networks .github:hover {
   transform: scale(1.2);
 }
-.contact .info {
-  display: flex;
-  justify-content: center;
-}
 .contact .info figure {
   display: flex;
   align-items: center;
@@ -186,8 +181,6 @@ body {
 /*Mis proyectos*/
 .projects__tittle {
   color: rgba(0, 0, 0, 0.723);
-  display: flex;
-  justify-content: center;
   font-size: 30px;
   padding: 20px;
   margin: 20px;
@@ -205,8 +198,6 @@ body {
 /* Certificaciones */
 .certifications__tittle {
   color: rgba(0, 0, 0, 0.723);
-  display: flex;
-  justify-content: center;
   font-size: 30px;
   padding: 20px;
   margin: 20px;
@@ -234,8 +225,6 @@ body {
 }
 .certifications figure figcaption {
   padding: 20px;
-  display: flex;
-  justify-content: center;
 }
 .certifications figure .certification__button {
   display: flex;
@@ -260,8 +249,6 @@ body {
 
 /* Footers */
 footer {
-  display: flex;
-  justify-content: center;
   padding: 10px;
   margin: 10px;
   border-top: 1px solid rgb(215, 215, 215);
@@ -393,6 +380,9 @@ footer {
     width: 300px;
     height: 200px;
   }
+}
+img {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

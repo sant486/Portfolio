@@ -1,0 +1,6 @@
+@mixin titulos ($size, $padding, $margin, $color) {
+    font-size: $size;
+    padding: $padding;
+    margin: $margin;
+    color: $color;
+}
