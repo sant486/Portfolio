@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600&family=Trocchi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -39,59 +39,69 @@
     </nav>
 
     <!-- Acerca de mi -->
-    <div id="aboutMe" class="aboutMe">
-        <div id="aboutMecontainer" class="aboutMecontainer">
-            <h1>Hello, I am an Engineer passionate about development and the IT industry. I've knowledge in Front-end Development, I'm a person with leadership, good interpersonal relationships, effective communication, group work and active learning skills, I am passionate about understanding and developing the best digital products for users</h1>
-            <button class="boton" type="button"> Descargar CV </button>
+    <div class="first__section__container">
+        <div id="aboutMe" class="aboutMe">
+            <div id="aboutMecontainer" class="aboutMecontainer">
+                <h1>Hello, I am an Engineer passionate about development and the IT industry. I've knowledge in Front-end Development, I'm a person with leadership, good interpersonal relationships, effective communication, group work and active learning skills, I am passionate about understanding and developing the best digital products for users</h1>
+                <a href="./CV Santiago Maramer.pdf"><button class="boton" type="button"> Descargar CV </button></a>
+            </div>
+            <img src="./images/ilustracion.svg" alt="coding ilustracion">
         </div>
-        <img src="./images/ilustracion.svg" alt="coding ilustracion">
+        <div class="animacion__bajar">
+            <a href="#skills__tittle"><img src="./images/bajar.svg" alt="moving arrow image"></a>
+        </div>
     </div>
-    <div class="animacion__bajar">
-        <img src="./images/bajar.svg" alt="moving arrow image">
-    </div>
+
     
     <!-- Mis habilidades -->
-    <h2 id="skills__tittle" class="skills__tittle">Skills</h2>
-    <div id="skills" class="skills">
-        <figure class="html">
-            <img src="./images/html.svg" alt="imagen html">
-            <figcaption>HTML</figcaption>
-        </figure>
-        <figure class="css">
-            <img src="./images/css.svg" alt="imagen css">
-            <figcaption>CSS</figcaption>
-        </figure>
-        <figure class="javascript">
-            <img src="./images/javascript.svg" alt="imagen javascript">
-            <figcaption>JAVASCRIPT</figcaption>
-        </figure>
-        <figure class="json">
-            <img src="./images/json.png" alt="imagen json">
-            <figcaption>JSON</figcaption>
-        </figure>
+    <div class="skills__container">
+        <h2 id="skills__tittle" class="skills__tittle">Skills</h2>
+        <div id="skills" class="skills">
+            <figure class="html">
+                <img src="./images/html.svg" alt="imagen html">
+                <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="css">
+                <img src="./images/css.svg" alt="imagen css">
+                <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="javascript">
+                <img src="./images/javascript.svg" alt="imagen javascript">
+                <figcaption>JAVASCRIPT</figcaption>
+            </figure>
+            <figure class="json">
+                <img src="./images/json.png" alt="imagen json">
+                <figcaption>JSON</figcaption>
+            </figure>
+        </div>
+        <div class="animacion__bajar">
+            <a href="#contact__tittle"><img src="./images/bajar.svg" alt="moving arrow image"></a>
+        </div>
     </div>
 
     <!-- Informacion de contacto -->
-    <h2 id="contact__tittle" class="contact__tittle">Contact</h2>
-    <div id="contact" class="contact">
-        <div class="networks">
-            <a class="instagram" href="https://www.instagram.com/santiago_maramer/"><img src="./images/instagram.svg" alt="logo instagram"></a>
-            <a class="linkedin" href="https://www.linkedin.com/in/santiago-maramer-arango-17555b1b3"><img src="./images/linkedin.svg" alt="logo linkedin"></a>
-            <a class="github" href="https://github.com/sant486"><img src="./images/github.svg" alt="logo github"></a>
-        </div>
-        <div class="info">
-            <figure class="mail">
-                <img src="./images/email.svg" alt="imagen mail">
-                <figcaption>Email: santiago.maramer00@usc.edu.co</figcaption>
-            </figure>
-            <figure class="phone">
-                <img src="./images/phone.svg" alt="imagen phone">
-                <figcaption>Phone: +57 302 425 0843</figcaption>
-            </figure>
-            <figure class="whatsapp">
-                <img src="./images/whatsapp.svg" alt="logo whatsapp">
-                <figcaption> Whatsapp: +57 302 425 0843</figcaption>
-            </figure>
+    <div class="contact__container">
+        <h2 id="contact__tittle" class="contact__tittle">Contact</h2>
+        <div id="contact" class="contact">
+            <div class="networks">
+                <a class="instagram" href="https://www.instagram.com/santiago_maramer/"><img src="./images/instagram.svg" alt="logo instagram"></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/santiago-maramer-arango-17555b1b3"><img src="./images/linkedin.svg" alt="logo linkedin"></a>
+                <a class="github" href="https://github.com/sant486"><img src="./images/github.svg" alt="logo github"></a>
+            </div>
+            <div class="info">
+                <figure class="mail">
+                    <a href="mailto:santiago.maramer00@usc.edu.co"><img src="./images/email.svg" alt="imagen mail"></a>
+                    <figcaption>Email: santiago.maramer00@usc.edu.co</figcaption>
+                </figure>
+                <figure class="phone">
+                    <a href="tel:+573024250843"><img src="./images/phone.svg" alt="imagen phone"></a>
+                    <figcaption>Phone: +57 302 425 0843</figcaption>
+                </figure>
+                <figure class="whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=573215543316"><img src="./images/whatsapp.svg" alt="logo whatsapp"></a>
+                    <figcaption> Whatsapp: +57 302 425 0843</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
 

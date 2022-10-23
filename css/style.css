@@ -1,5 +1,5 @@
 @charset "UTF-8";
-footer, .certifications figure figcaption, .certifications__tittle, .projects__tittle, .contact .info, .contact__tittle, .animacion__bajar, .nav__container {
+footer, .certifications figure figcaption, .certifications__tittle, .projects__tittle, .contact__container .contact__tittle, .contact__container .contact .info, .skills__container .animacion__bajar, .first__section__container .animacion__bajar, .nav__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -12,15 +12,13 @@ footer, .certifications figure figcaption, .certifications__tittle, .projects__t
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: rgba(0, 0, 0, 0.723);
 } /* Menu de navegacion */
 .nav__container {
   background: white;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 800;
-  position: sticky;
-  top: 0;
 }
 .nav__container .options {
   display: flex;
@@ -47,28 +45,33 @@ body {
 }
 
 /* Acerca de mi */
-.aboutMe {
+.first__section__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.first__section__container .aboutMe {
   display: flex;
   padding: 20px;
   margin: 20px;
 }
-.aboutMe img {
+.first__section__container .aboutMe img {
   display: flex;
   width: 50%;
 }
-.aboutMe .aboutMecontainer {
+.first__section__container .aboutMe .aboutMecontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.aboutMe .aboutMecontainer h1 {
+.first__section__container .aboutMe .aboutMecontainer h1 {
+  font-family: "Orbitron", sans-serif;
   font-size: 16px;
   display: flex;
   width: 80%;
   color: rgba(0, 0, 0, 0.723);
 }
-.aboutMe .aboutMecontainer button {
+.first__section__container .aboutMe .aboutMecontainer button {
   width: 200px;
   padding: 10px;
   border: none;
@@ -79,15 +82,14 @@ body {
   border-radius: 30px;
   box-shadow: 5px 5px 20px gray;
   transition: all 2s;
+  font-family: "Orbitron", sans-serif;
 }
-.aboutMe .aboutMecontainer button:hover {
+.first__section__container .aboutMe .aboutMecontainer button:hover {
   transform: scale(1.2);
 }
-
-.animacion__bajar {
+.first__section__container .animacion__bajar {
   animation: bounce 1s infinite;
 }
-
 @keyframes bounce {
   0% {
     transform: translateY(-40%);
@@ -96,90 +98,120 @@ body {
     transform: translateX(0%);
   }
 }
-/* Mis habilidades */
-.skills__tittle {
-  font-size: 30px;
-  padding: 20px;
-  margin: 20px;
-  color: rgba(0, 0, 0, 0.723);
-  display: flex;
-  justify-content: center;
-}
 
-.skills {
+/* Mis habilidades */
+.skills__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.skills__container .skills {
   display: flex;
   justify-content: space-around;
   padding: 50px;
   margin: 20px;
-  border-bottom: 1px solid rgb(215, 215, 215);
 }
-.skills figure {
+.skills__container .skills figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgb(215, 215, 215);
   border-radius: 30px;
 }
-.skills figure img {
+.skills__container .skills figure img {
   width: 100px;
   height: 100px;
 }
-.skills figure figcaption {
+.skills__container .skills figure figcaption {
+  font-family: "Orbitron", sans-serif;
   padding: 10px;
   margin: 10px;
 }
-.skills figure img {
+.skills__container .skills figure img {
   padding: 10px;
   margin: 20px;
 }
-.skills .html, .skills .css, .skills .javascript, .skills .json {
+.skills__container .skills .html, .skills__container .skills .css, .skills__container .skills .javascript, .skills__container .skills .json {
   transition: all 2s;
   box-shadow: 5px 5px 20px gray;
 }
-.skills .html:hover, .skills .css:hover, .skills .javascript:hover, .skills .json:hover {
+.skills__container .skills .html:hover, .skills__container .skills .css:hover, .skills__container .skills .javascript:hover, .skills__container .skills .json:hover {
   transform: scale(1.2);
+}
+.skills__container .animacion__bajar {
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.skills__container .skills__tittle {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.723);
+  display: flex;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
 }
 
 /* Informacion de contacto */
-.contact__tittle {
-  color: rgba(0, 0, 0, 0.723);
-  padding: 20px;
-  margin: 20px;
-  font-size: 30px;
+.contact__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
-
-.contact .networks {
+.contact__container .contact .networks {
   display: flex;
   justify-content: center;
   padding: 20px;
   margin: 20px;
 }
-.contact .networks .instagram, .contact .networks .linkedin, .contact .networks .github {
+.contact__container .contact .networks .instagram, .contact__container .contact .networks .linkedin, .contact__container .contact .networks .github {
   transition: all 2s;
   padding: 20px;
   margin: 20px;
 }
-.contact .networks .instagram img, .contact .networks .linkedin img, .contact .networks .github img {
+.contact__container .contact .networks .instagram img, .contact__container .contact .networks .linkedin img, .contact__container .contact .networks .github img {
+  filter: drop-shadow(6px 6px 6px grey);
   width: 70px;
   height: 70px;
 }
-.contact .networks .instagram:hover, .contact .networks .linkedin:hover, .contact .networks .github:hover {
+.contact__container .contact .networks .instagram:hover, .contact__container .contact .networks .linkedin:hover, .contact__container .contact .networks .github:hover {
   transform: scale(1.2);
 }
-.contact .info figure {
+.contact__container .contact .info figure {
   display: flex;
   align-items: center;
   padding: 20px;
   margin: 20px;
 }
-.contact .info figure img {
+.contact__container .contact .info figure figcaption {
+  font-family: "Orbitron", sans-serif;
+}
+.contact__container .contact .info figure img {
+  filter: drop-shadow(6px 6px 6px grey);
+  transition: all 2s;
+  margin: 20px;
   width: 70px;
   height: 70px;
   padding-right: 10px;
 }
+.contact__container .contact .info figure img:hover {
+  transform: scale(1.2);
+}
+.contact__container .contact__tittle {
+  color: rgba(0, 0, 0, 0.723);
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  font-family: "Orbitron", sans-serif;
+}
 
 /*Mis proyectos*/
 .projects__tittle {
+  font-family: "Orbitron", sans-serif;
   color: rgba(0, 0, 0, 0.723);
   font-size: 30px;
   padding: 20px;
@@ -197,6 +229,7 @@ body {
 
 /* Certificaciones */
 .certifications__tittle {
+  font-family: "Orbitron", sans-serif;
   color: rgba(0, 0, 0, 0.723);
   font-size: 30px;
   padding: 20px;
@@ -224,6 +257,7 @@ body {
   height: 300px;
 }
 .certifications figure figcaption {
+  font-family: "Orbitron", sans-serif;
   padding: 20px;
 }
 .certifications figure .certification__button {
@@ -238,6 +272,7 @@ body {
   border-radius: 30px;
   box-shadow: 5px 5px 20px gray;
   transition: all 2s;
+  font-family: "Orbitron", sans-serif;
 }
 .certifications figure .certification__button a {
   text-decoration: none;
@@ -249,6 +284,7 @@ body {
 
 /* Footers */
 footer {
+  font-family: "Orbitron", sans-serif;
   padding: 10px;
   margin: 10px;
   border-top: 1px solid rgb(215, 215, 215);
@@ -257,22 +293,38 @@ footer {
 /*----------------------------RESPONSIVE-------------------------------------------------*/
 /* Tablet */
 @media only screen and (max-width: 768px) {
+  /* Menu de navegacion */
+  .nav__container .container-fluid .name {
+    margin-left: 0px;
+  }
   /* Acerca de mi */
-  .aboutMe .aboutMecontainer button {
+  .first__section__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .first__section__container .aboutMe .aboutMecontainer button {
     margin: 20px;
   }
-  .aboutMe img {
+  .first__section__container .aboutMe img {
     width: 0;
   }
   /* Mis habilidades */
-  .skills {
+  .skills__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .skills__container .skills {
     display: grid;
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(2, 250px);
     gap: 20px;
   }
   /* Informacion de contacto */
-  .contact .info {
+  .contact__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact__container .contact .info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -297,24 +349,44 @@ footer {
     height: 300px;
   }
 }
+footer {
+  font-size: 14px;
+}
+
 /* Mobile grande*/
 @media only screen and (max-width: 576px) {
+  /* Menu de navegacion */
+  .nav__container .container-fluid .name {
+    margin-left: 0px;
+  }
   /* Acerca de mi */
-  .aboutMe .aboutMecontainer button {
+  .first__section__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .first__section__container .aboutMe .aboutMecontainer button {
     margin: 20px;
   }
-  .aboutMe img {
+  .first__section__container .aboutMe img {
     width: 0;
   }
   /* Mis habilidades */
-  .skills {
+  .skills__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .skills__container .skills {
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 200px);
     gap: 20px;
   }
   /* Informacion de contacto */
-  .contact .info {
+  .contact__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact__container .contact .info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -341,25 +413,42 @@ footer {
 }
 /* Mobile pequeño*/
 @media only screen and (max-width: 420px) {
+  /* Menu de navegacion */
+  .nav__container .container-fluid .name {
+    margin-left: 0px;
+  }
   /* Acerca de mi */
-  .aboutMe .aboutMecontainer button {
+  .first__section__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .first__section__container .aboutMe .aboutMecontainer button {
     margin: 20px;
   }
-  .aboutMe img {
+  .first__section__container .aboutMe img {
     width: 0;
   }
   /* Mis habilidades */
-  .skills {
+  .skills__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .skills__container .skills {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(2, 0.5fr);
     gap: 20px;
   }
   /* Informacion de contacto */
-  .contact .info {
+  .contact__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact__container .contact .info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
   }
   /* Certificaciones */
   .certifications {
@@ -380,9 +469,6 @@ footer {
     width: 300px;
     height: 200px;
   }
-}
-img {
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

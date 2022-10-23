@@ -10,10 +10,8 @@
 .nav__container {
     @extend %display-row-center;
     background:white;
-    font-family: 'Nunito Sans', sans-serif;   
+    font-family: 'Orbitron', sans-serif;   
     font-weight: 800;
-    position: sticky;
-    top: 0;
 
     .options {
         display: flex;
@@ -45,161 +43,210 @@
 }
 
 /* Acerca de mi */
-.aboutMe {
-    display: flex;
-    padding: 20px;
-    margin: 20px;
+.first__section__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
 
-    img {
+    .aboutMe {
         display: flex;
-        width: 50%;
+        padding: 20px;
+        margin: 20px;
+    
+        img {
+            display: flex;
+            width: 50%;
+        }
+    
+        .aboutMecontainer {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+    
+            h1 {
+                font-family: 'Orbitron', sans-serif;
+                font-size: nth( $font-size, 1 );
+                display: flex;
+                width: 80%;
+                color: $color-titulos;
+            }
+    
+            button {
+                width: 200px;
+                padding: 10px;
+                border: none;
+                text-decoration: none;
+                color: white;
+                background-color: $color-botones;
+                font-size: nth($font-size, 1);
+                border-radius: 30px;
+                box-shadow: 5px 5px 20px gray;
+                transition: all 2s;
+                font-family: 'Orbitron', sans-serif;
+    
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 
-    .aboutMecontainer {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        align-items: center;
+    .animacion__bajar {
+        @extend %display-row-center;
+        animation: bounce 1s infinite;
+    }
 
-        h1 {
-            font-size: nth( $font-size, 1 );
-            display: flex;
-            width: 80%;
-            color: $color-titulos;
+    @keyframes bounce {
+        0%{
+            transform: translateY(-40%);
         }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+}
 
-        button {
-            width: 200px;
-            padding: 10px;
-            border: none;
-            text-decoration: none;
-            color: white;
-            background-color: $color-botones;
-            font-size: nth($font-size, 1);
+
+/* Mis habilidades */
+.skills__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .skills {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        margin: 20px;
+    
+    
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             border-radius: 30px;
-            box-shadow: 5px 5px 20px gray;
+    
+            img {
+                width: 100px;
+                height: 100px;
+            }
+    
+            figcaption {
+                font-family: 'Orbitron', sans-serif;
+                padding: 10px;
+                margin: 10px;
+            }
+    
+            img {
+                padding: 10px;
+                margin: 20px;
+            }
+        }
+    
+        .html, .css, .javascript, .json {
             transition: all 2s;
-
-            &:hover{
+            box-shadow: 5px 5px 20px gray;
+    
+            &:hover {
                 transform: scale(1.2);
             }
         }
     }
-}
 
-.animacion__bajar {
-    @extend %display-row-center;
-    animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-    0%{
-        transform: translateY(-40%);
+    .animacion__bajar {
+        @extend %display-row-center;
+        animation: bounce 1s infinite;
     }
-    100%{
-        transform: translateX(0%);
+
+    @keyframes bounce {
+        0%{
+            transform: translateY(-40%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
     }
-}
 
-/* Mis habilidades */
-.skills__tittle{
-    @include titulos(30px, 20px, 20px, rgba(0, 0, 0, 0.723));
-    display: flex;
-    justify-content: center;
-} 
-
-.skills {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    margin: 20px;
-    border-bottom: 1px solid $color-separadores;
-
-    figure {
+    .skills__tittle{
+        @include titulos(30px, 20px, 20px, rgba(0, 0, 0, 0.723));
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid $color-separadores;
-        border-radius: 30px;
-
-        img {
-            width: 100px;
-            height: 100px;
-        }
-
-        figcaption {
-            padding: 10px;
-            margin: 10px;
-        }
-
-        img {
-            padding: 10px;
-            margin: 20px;
-        }
-    }
-
-    .html, .css, .javascript, .json {
-        transition: all 2s;
-        box-shadow: 5px 5px 20px gray;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
+        justify-content: center; 
+        font-family: 'Orbitron', sans-serif;
+    } 
 }
+
 
 /* Informacion de contacto */
-.contact__tittle {
-    color: $color-titulos;
-    padding: 20px;
-    margin: 20px;
-    @extend %display-row-center;
-    font-size: nth($font-size,2);
-} 
+.contact__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
 
-.contact {
-    .networks {
-        display: flex;
-        justify-content: center;
+    .contact {
+        .networks {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px;
+    
+            .instagram, .linkedin, .github {
+                transition: all 2s;
+                padding: 20px;
+                margin: 20px;
+    
+                img {
+                    filter: drop-shadow(6px 6px 6px grey);
+                    width: 70px;
+                    height: 70px;
+                }
+    
+                &:hover {
+                    transform: scale(1.2); 
+                }
+            }
+        }
+    
+        .info {
+            @extend %display-row-center;
+    
+            figure {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                margin: 20px;
+
+                figcaption {
+                    font-family: 'Orbitron', sans-serif;
+                }
+    
+                img {
+                    filter: drop-shadow(6px 6px 6px grey);
+                    transition: all 2s;
+                    margin: 20px;
+                    width: 70px;
+                    height: 70px;
+                    padding-right: 10px;
+                    
+
+                    &:hover {
+                        transform: scale(1.2);  
+                    }
+                }
+            }
+        }
+    }
+
+    .contact__tittle {
+        color: $color-titulos;
         padding: 20px;
         margin: 20px;
-
-        .instagram, .linkedin, .github {
-            transition: all 2s;
-            padding: 20px;
-            margin: 20px;
-
-            img {
-                width: 70px;
-                height: 70px;
-            }
-
-            &:hover {
-                transform: scale(1.2); 
-            }
-        }
-    }
-
-    .info {
         @extend %display-row-center;
-
-        figure {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            margin: 20px;
-
-            img {
-                width: 70px;
-                height: 70px;
-                padding-right: 10px;
-            }
-        }
-    }
+        font-size: nth($font-size,2);
+        font-family: 'Orbitron', sans-serif;
+    } 
 }
 
 /*Mis proyectos*/
 .projects__tittle {
+    font-family: 'Orbitron', sans-serif;
     color: $color-titulos;
     @extend %display-row-center;
     font-size: nth($font-size,2);
@@ -213,12 +260,13 @@
 
     .carrusel {
         justify-content: center;
-        align-items: center;
+        align-items: center; 
     }
 }
 
 /* Certificaciones */
 .certifications__tittle {
+    font-family: 'Orbitron', sans-serif;
     color: $color-titulos;
     @extend %display-row-center;
     font-size: nth($font-size,2);
@@ -248,6 +296,7 @@
         }
 
         figcaption {
+            font-family: 'Orbitron', sans-serif;
             padding: 20px;
             @extend %display-row-center;
         }
@@ -264,6 +313,7 @@
             border-radius: 30px;
             box-shadow: 5px 5px 20px gray;
             transition: all 2s;
+            font-family: 'Orbitron', sans-serif;
 
             a {
                 text-decoration: none;
@@ -279,6 +329,7 @@
 
 /* Footers */
 footer {
+    font-family: 'Orbitron', sans-serif;
     @extend %display-row-center;
     padding: map-get($map: $footer, $key:footer-padding);
     margin: map-get($map: $footer, $key:footer-margin);
@@ -288,31 +339,55 @@ footer {
 /*----------------------------RESPONSIVE-------------------------------------------------*/
 /* Tablet */
 @media only screen and (max-width: 768px) {
-    /* Acerca de mi */
-    .aboutMe{
-        .aboutMecontainer {
-            button {
-                margin: 20px;
+    /* Menu de navegacion */
+    .nav__container{
+        .container-fluid {
+            .name{
+                margin-left: 0px;
             }
         }
-        img{
-            width: 0; 
+    }
+    /* Acerca de mi */
+    .first__section__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .aboutMe{
+            .aboutMecontainer {
+                button {
+                    margin: 20px;
+                }
+            }
+            img{
+                width: 0; 
+            }
         }
     }
+
     /* Mis habilidades */
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        grid-template-rows: repeat(2, 250px);
-        gap: 20px;
+    .skills__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(2, 250px);
+            gap: 20px;
+        }
     }
 
     /* Informacion de contacto */
-    .contact {
-        .info {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    .contact__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .contact {
+            .info {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 
@@ -341,33 +416,61 @@ footer {
     }    
 }
 
+footer {
+    font-size: 14px;
+}
+
 /* Mobile grande*/
 @media only screen and (max-width: 576px) {
-    /* Acerca de mi */
-    .aboutMe{
-        .aboutMecontainer {
-            button {
-                margin: 20px;
+    /* Menu de navegacion */
+    .nav__container{
+        .container-fluid {
+            .name{
+                margin-left: 0px;
             }
         }
-        img{
-            width: 0; 
+    }
+    /* Acerca de mi */
+    .first__section__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .aboutMe{
+            .aboutMecontainer {
+                button {
+                    margin: 20px;
+                }
+            }
+            img{
+                width: 0; 
+            }
         }
     }
+
     /* Mis habilidades */
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-        grid-template-rows: repeat(2, 200px);
-        gap: 20px;
+    .skills__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(2, 200px);
+            gap: 20px;
+        }
     }
 
     /* Informacion de contacto */
-    .contact {
-        .info {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    .contact__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .contact {
+            .info {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 
@@ -398,31 +501,56 @@ footer {
 
 /* Mobile pequeño*/
 @media only screen and (max-width: 420px) {
-    /* Acerca de mi */
-    .aboutMe{
-        .aboutMecontainer {
-            button {
-                margin: 20px;
+     /* Menu de navegacion */
+    .nav__container{
+        .container-fluid {
+            .name{
+                margin-left: 0px;
             }
         }
-        img{
-            width: 0; 
+    }
+    /* Acerca de mi */
+    .first__section__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .aboutMe{
+            .aboutMecontainer {
+                button {
+                    margin: 20px;
+                }
+            }
+            img{
+                width: 0; 
+            }
         }
     }
+
     /* Mis habilidades */
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(2, 0.5fr);
-        grid-template-rows: repeat(2, 0.5fr);
-        gap: 20px;
+    .skills__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 0.5fr);
+            grid-template-rows: repeat(2, 0.5fr);
+            gap: 20px;
+        }
     }
 
     /* Informacion de contacto */
-    .contact {
-        .info {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    .contact__container {
+        padding-top:20px;
+        padding-bottom: 20px;
+
+        .contact {
+            .info {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+            }
         }
     }
 
@@ -451,6 +579,3 @@ footer {
     }  
 }
 
-img {
-    color:black;
-}
