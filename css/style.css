@@ -352,6 +352,9 @@ footer {
   .carrusel__main {
     width: 650px;
   }
+  .carrusel__main .proyectos {
+    width: 650px;
+  }
 }
 footer {
   font-size: 14px;
@@ -418,6 +421,9 @@ footer {
   .carrusel__main {
     width: 450px;
   }
+  .carrusel__main .proyectos {
+    width: 450px;
+  }
 }
 /* Mobile pequeño*/
 @media only screen and (max-width: 420px) {
@@ -478,7 +484,10 @@ footer {
     height: 200px;
   }
   /* Proyectos */
-  .carrusel__container {
+  .carrusel__main {
+    width: 350px;
+  }
+  .carrusel__main .proyectos {
     width: 350px;
   }
 }
