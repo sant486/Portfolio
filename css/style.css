@@ -349,8 +349,8 @@ footer {
     height: 300px;
   }
   /* Proyectos */
-  .carrusel__container {
-    width: 100%;
+  .carrusel__main {
+    width: 650px;
   }
 }
 footer {
@@ -415,8 +415,8 @@ footer {
     height: 250px;
   }
   /* Proyectos */
-  .carrusel__container {
-    width: 100%;
+  .carrusel__main {
+    width: 450px;
   }
 }
 /* Mobile pequeño*/
@@ -479,7 +479,7 @@ footer {
   }
   /* Proyectos */
   .carrusel__container {
-    width: 100%;
+    width: 350px;
   }
 }
 
