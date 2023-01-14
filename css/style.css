@@ -1,5 +1,5 @@
 @charset "UTF-8";
-footer, .certifications figure figcaption, .certifications__tittle, .projects__tittle, .contact__container .contact__tittle, .contact__container .contact .info, .skills__container .animacion__bajar, .first__section__container .animacion__bajar, .nav__container {
+footer, .certifications__container .animacion__bajar__four, .certifications__container .certifications figure figcaption, .certifications__container .certifications__tittle, .projects__container .animacion__bajar__three, .projects__container .projects__tittle, .contact__container .contact__tittle, .contact__container .contact .info, .skills__container .animacion__bajar__two, .first__section__container .animacion__bajar__one, .nav__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -87,7 +87,7 @@ body {
 .first__section__container .aboutMe .aboutMecontainer button:hover {
   transform: scale(1.2);
 }
-.first__section__container .animacion__bajar {
+.first__section__container .animacion__bajar__one {
   animation: bounce 1s infinite;
 }
 @keyframes bounce {
@@ -136,7 +136,7 @@ body {
 .skills__container .skills .html:hover, .skills__container .skills .css:hover, .skills__container .skills .javascript:hover, .skills__container .skills .json:hover {
   transform: scale(1.2);
 }
-.skills__container .animacion__bajar {
+.skills__container .animacion__bajar__two {
   animation: bounce 1s infinite;
 }
 @keyframes bounce {
@@ -210,33 +210,57 @@ body {
 }
 
 /*Mis proyectos*/
-.projects__tittle {
+.projects__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.projects__container .projects__tittle {
   font-family: "Orbitron", sans-serif;
   color: rgba(0, 0, 0, 0.723);
   font-size: 30px;
   padding: 20px;
   margin: 20px;
 }
-
-.carrusel__container {
+.projects__container .carrusel__container {
   display: flex;
   justify-content: center;
 }
-.carrusel__container .carrusel {
+.projects__container .carrusel__container .carrusel {
   justify-content: center;
   align-items: center;
 }
+.projects__container .carrusel__container .carrusel h5 {
+  color: black;
+}
+.projects__container .carrusel__container .carrusel p {
+  color: black;
+}
+.projects__container .animacion__bajar__three {
+  margin-top: 50px;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 /* Certificaciones */
-.certifications__tittle {
+.certifications__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.certifications__container .certifications__tittle {
   font-family: "Orbitron", sans-serif;
   color: rgba(0, 0, 0, 0.723);
   font-size: 30px;
   padding: 20px;
   margin: 20px;
 }
-
-.certifications {
+.certifications__container .certifications {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -245,22 +269,22 @@ body {
   align-items: center;
   padding: 20px;
 }
-.certifications figure {
+.certifications__container .certifications figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.certifications figure img {
+.certifications__container .certifications figure img {
   border-radius: 50px;
   width: 500px;
   height: 300px;
 }
-.certifications figure figcaption {
+.certifications__container .certifications figure figcaption {
   font-family: "Orbitron", sans-serif;
   padding: 20px;
 }
-.certifications figure .certification__button {
+.certifications__container .certifications figure .certification__button {
   display: flex;
   justify-content: center;
   width: 150px;
@@ -274,12 +298,23 @@ body {
   transition: all 2s;
   font-family: "Orbitron", sans-serif;
 }
-.certifications figure .certification__button a {
+.certifications__container .certifications figure .certification__button a {
   text-decoration: none;
   color: white;
 }
-.certifications figure .certification__button:hover {
+.certifications__container .certifications figure .certification__button:hover {
   transform: scale(1.1);
+}
+.certifications__container .animacion__bajar__four {
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 /* Footers */
